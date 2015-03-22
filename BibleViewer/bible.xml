@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bible>
+  <book category="old">
+    <Id>1</Id>
+    <SelectId>sGen</SelectId>
+    <Title>创Gen</Title>
+    <ChapterNum>50</ChapterNum>
+  </book>
+  <book category="old">
+    <Id>2</Id>
+    <SelectId>sExo</SelectId>
+    <Title>出/Exo</Title>
+    <ChapterNum>40</ChapterNum>
+  </book>
+  <book category="old">
+    <Id>3</Id>
+    <SelectId>sLev</SelectId>
+    <Title>利/Lev</Title>
+    <ChapterNum>27</ChapterNum>
+  </book>
+  <book category="old">
+    <Id>4</Id>
+    <SelectId>sNum</SelectId>
+    <Title>民/Num</Title>
+    <ChapterNum>36</ChapterNum>
+  </book>
+<book category="old">
+    <Id>5</Id>
+    <SelectId>sDeut</SelectId>
+    <Title>申/Deut</Title>
+    <ChapterNum>34</ChapterNum>
+  </book>
+<book category="old">
+    <Id>6</Id>
+    <SelectId>sJosh</SelectId>
+    <Title>书/Josh</Title>
+    <ChapterNum>24</ChapterNum>
+  </book>
+<book category="old">
+    <Id>7</Id>
+    <SelectId>sJudg</SelectId>
+    <Title>士/Judg</Title>
+    <ChapterNum>21</ChapterNum>
+  </book>
+<book category="old">
+    <Id>8</Id>
+    <SelectId>sRuth</SelectId>
+    <Title>路/Ruth</Title>
+    <ChapterNum>4</ChapterNum>
+  </book>
+<book category="old">
+    <Id>9</Id>
+    <SelectId>s1Sam</SelectId>
+    <Title>撒上/1Sam</Title>
+    <ChapterNum>31</ChapterNum>
+  </book>
+<book category="old">
+    <Id>10</Id>
+    <SelectId>s2Sam</SelectId>
+    <Title>撒下/2Sam</Title>
+    <ChapterNum>24</ChapterNum>
+  </book>
+<book category="old">
+    <Id>11</Id>
+    <SelectId>s1Kings</SelectId>
+    <Title>王上/1Kings</Title>
+    <ChapterNum>22</ChapterNum>
+  </book>
+<book category="old">
+    <Id>12</Id>
+    <SelectId>s2Kings</SelectId>
+    <Title>王下/2Kings</Title>
+    <ChapterNum>25</ChapterNum>
+  </book>
+<book category="old">
+    <Id>13</Id>
+    <SelectId>s1Chr</SelectId>
+    <Title>代上/1Chr</Title>
+    <ChapterNum>29</ChapterNum>
+  </book>
+<book category="old">
+    <Id>14</Id>
+    <SelectId>s2Chr</SelectId>
+    <Title>代下/1Chr</Title>
+    <ChapterNum>36</ChapterNum>
+  </book>
+<book category="old">
+    <Id>15</Id>
+    <SelectId>sEzra</SelectId>
+    <Title>拉/Ezra</Title>
+    <ChapterNum>10</ChapterNum>
+  </book>
+<book category="old">
+    <Id>16</Id>
+    <SelectId>sNeh</SelectId>
+    <Title>尼/Neh</Title>
+    <ChapterNum>13</ChapterNum>
+  </book>
+<book category="old">
+    <Id>17</Id>
+    <SelectId>sEsth</SelectId>
+    <Title>斯/Esth</Title>
+    <ChapterNum>10</ChapterNum>
+  </book>
+<book category="old">
+    <Id>18</Id>
+    <SelectId>sJob</SelectId>
+    <Title>伯/Job</Title>
+    <ChapterNum>42</ChapterNum>
+  </book>
+<book category="old">
+    <Id>19</Id>
+    <SelectId>sPslm</SelectId>
+    <Title>诗/Pslm</Title>
+    <ChapterNum>150</ChapterNum>
+  </book>
+<book category="old">
+    <Id>20</Id>
+    <SelectId>sProv</SelectId>
+    <Title>箴/Prov</Title>
+    <ChapterNum>31</ChapterNum>
+  </book>
+<book category="old">
+    <Id>21</Id>
+    <SelectId>sEccles</SelectId>
+    <Title>传/Eccles</Title>
+    <ChapterNum>12</ChapterNum>
+  </book>
+<book category="old">
+    <Id>22</Id>
+    <SelectId>sSong</SelectId>
+    <Title>歌/Song</Title>
+    <ChapterNum>8</ChapterNum>
+  </book>
+<book category="old">
+    <Id>23</Id>
+    <SelectId>sIsa</SelectId>
+    <Title>赛/Isa</Title>
+    <ChapterNum>66</ChapterNum>
+  </book>
+<book category="old">
+    <Id>24</Id>
+    <SelectId>sJer</SelectId>
+    <Title>耶/Jer</Title>
+    <ChapterNum>52</ChapterNum>
+  </book>
+<book category="old">
+    <Id>25</Id>
+    <SelectId>sLam</SelectId>
+    <Title>哀/Lam</Title>
+    <ChapterNum>5</ChapterNum>
+  </book>
+<book category="old">
+    <Id>26</Id>
+    <SelectId>sEzek</SelectId>
+    <Title>结/Ezek</Title>
+    <ChapterNum>48</ChapterNum>
+  </book>
+<book category="old">
+    <Id>27</Id>
+    <SelectId>sDan</SelectId>
+    <Title>但/Dan</Title>
+    <ChapterNum>12</ChapterNum>
+  </book>
+<book category="old">
+    <Id>28</Id>
+    <SelectId>sHos</SelectId>
+    <Title>何/Hos</Title>
+    <ChapterNum>14</ChapterNum>
+  </book>
+<book category="old">
+    <Id>29</Id>
+    <SelectId>sJoel</SelectId>
+    <Title>珥/Joel</Title>
+    <ChapterNum>3</ChapterNum>
+  </book>
+<book category="old">
+    <Id>30</Id>
+    <SelectId>sAmos</SelectId>
+    <Title>摩/Amos</Title>
+    <ChapterNum>9</ChapterNum>
+  </book>
+ <book category="old">
+    <Id>31</Id>
+    <SelectId>sObad</SelectId>
+    <Title>俄/Obad</Title>
+    <ChapterNum>1</ChapterNum>
+  </book>  
+<book category="old">
+    <Id>32</Id>
+    <SelectId>sJnh</SelectId>
+    <Title>拿/Jnh</Title>
+    <ChapterNum>4</ChapterNum>
+  </book>
+<book category="old">
+    <Id>33</Id>
+    <SelectId>sMicah</SelectId>
+    <Title>弥/Micah</Title>
+    <ChapterNum>7</ChapterNum>
+  </book>
+<book category="old">
+    <Id>34</Id>
+    <SelectId>sNah</SelectId>
+    <Title>鸿/Nah</Title>
+    <ChapterNum>3</ChapterNum>
+  </book>
+<book category="old">
+    <Id>35</Id>
+    <SelectId>sHab</SelectId>
+    <Title>哈/Hab</Title>
+    <ChapterNum>3</ChapterNum>
+  </book>
+<book category="old">
+    <Id>36</Id>
+    <SelectId>sZeph</SelectId>
+    <Title>番/Zeph</Title>
+    <ChapterNum>3</ChapterNum>
+  </book>
+<book category="old">
+    <Id>37</Id>
+    <SelectId>sHaggai</SelectId>
+    <Title>该/Haggai</Title>
+    <ChapterNum>2</ChapterNum>
+  </book>
+<book category="old">
+    <Id>38</Id>
+    <SelectId>sZech</SelectId>
+    <Title>亚/Zech</Title>
+    <ChapterNum>14</ChapterNum>
+  </book>
+<book category="old">
+    <Id>39</Id>
+    <SelectId>sMal</SelectId>
+    <Title>玛/Mal</Title>
+    <ChapterNum>4</ChapterNum>
+</book>
+
+  
+    
+<book category="new">
+    <Id>40</Id>
+    <SelectId>sMatt</SelectId>
+    <Title>太/Matt</Title>
+    <ChapterNum>28</ChapterNum>
+</book>
+<book category="new">
+    <Id>41</Id>
+    <SelectId>sMrk</SelectId>
+    <Title>可/Mrk</Title>
+    <ChapterNum>16</ChapterNum>
+</book>
+<book category="new">
+    <Id>42</Id>
+    <SelectId>sLuk</SelectId>
+    <Title>路/Luk</Title>
+    <ChapterNum>24</ChapterNum>
+</book>
+<book category="new">
+    <Id>43</Id>
+    <SelectId>sJohn</SelectId>
+    <Title>约/John</Title>
+    <ChapterNum>21</ChapterNum>
+</book>
+<book category="new">
+    <Id>44</Id>
+    <SelectId>sActs</SelectId>
+    <Title>徒/Acts</Title>
+    <ChapterNum>28</ChapterNum>
+</book>
+<book category="new">
+    <Id>45</Id>
+    <SelectId>sRom</SelectId>
+    <Title>罗/Rom</Title>
+    <ChapterNum>16</ChapterNum>
+</book>
+<book category="new">
+    <Id>46</Id>
+    <SelectId>s1Cor</SelectId>
+    <Title>林前/1Cor</Title>
+    <ChapterNum>16</ChapterNum>
+</book>
+<book category="new">
+    <Id>47</Id>
+    <SelectId>s2Cor</SelectId>
+    <Title>林后/s1Cor</Title>
+    <ChapterNum>13</ChapterNum>
+</book>
+<book category="new">
+    <Id>48</Id>
+    <SelectId>sGal</SelectId>
+    <Title>加/Gal</Title>
+    <ChapterNum>6</ChapterNum>
+</book>
+<book category="new">
+    <Id>49</Id>
+    <SelectId>sEphes</SelectId>
+    <Title>弗/Ephes</Title>
+    <ChapterNum>6</ChapterNum>
+</book>
+<book category="new">
+    <Id>50</Id>
+    <SelectId>sPhil</SelectId>
+    <Title>腓/Phil</Title>
+    <ChapterNum>4</ChapterNum>
+</book>
+<book category="new">
+    <Id>51</Id>
+    <SelectId>sCol</SelectId>
+    <Title>西/Col</Title>
+    <ChapterNum>4</ChapterNum>
+</book>
+<book category="new">
+    <Id>52</Id>
+    <SelectId>s1The</SelectId>
+    <Title>帖前/1The</Title>
+    <ChapterNum>5</ChapterNum>
+</book>
+<book category="new">
+    <Id>53</Id>
+    <SelectId>s2The</SelectId>
+    <Title>帖后/The</Title>
+    <ChapterNum>3</ChapterNum>
+</book>
+<book category="new">
+    <Id>54</Id>
+    <SelectId>s1Tim</SelectId>
+    <Title>提前/1Tim</Title>
+    <ChapterNum>6</ChapterNum>
+</book>
+<book category="new">
+    <Id>55</Id>
+    <SelectId>s2Tim</SelectId>
+    <Title>提后/2Tim</Title>
+    <ChapterNum>4</ChapterNum>
+</book>
+<book category="new">
+    <Id>56</Id>
+    <SelectId>sTitus</SelectId>
+    <Title>多/Titus</Title>
+    <ChapterNum>3</ChapterNum>
+</book>
+<book category="new">
+    <Id>57</Id>
+    <SelectId>sPhilem</SelectId>
+    <Title>门/Philem</Title>
+    <ChapterNum>1</ChapterNum>
+</book>
+<book category="new">
+    <Id>58</Id>
+    <SelectId>sHebrews</SelectId>
+    <Title>来/Hebrews</Title>
+    <ChapterNum>13</ChapterNum>
+</book>
+<book category="new">
+    <Id>59</Id>
+    <SelectId>sJames</SelectId>
+    <Title>雅/James</Title>
+    <ChapterNum>5</ChapterNum>
+</book>
+<book category="new">
+    <Id>60</Id>
+    <SelectId>s1Pet</SelectId>
+    <Title>彼前/1Pet</Title>
+    <ChapterNum>5</ChapterNum>
+</book>
+<book category="new">
+    <Id>61</Id>
+    <SelectId>s2Pet</SelectId>
+    <Title>彼后/2Pet</Title>
+    <ChapterNum>3</ChapterNum>
+</book>
+<book category="new">
+    <Id>62</Id>
+    <SelectId>s1John</SelectId>
+    <Title>约一/1John</Title>
+    <ChapterNum>5</ChapterNum>
+</book>
+<book category="new">
+    <Id>63</Id>
+    <SelectId>s2John</SelectId>
+    <Title>约二/2John</Title>
+    <ChapterNum>1</ChapterNum>
+</book>
+<book category="new">
+    <Id>64</Id>
+    <SelectId>s3John</SelectId>
+    <Title>约三/John</Title>
+    <ChapterNum>1</ChapterNum>
+</book>
+<book category="new">
+    <Id>65</Id>
+    <SelectId>sJude</SelectId>
+    <Title>犹/Jude</Title>
+    <ChapterNum>1</ChapterNum>
+</book>
+<book category="new">
+    <Id>66</Id>
+    <SelectId>sRev</SelectId>
+    <Title>启/Rev</Title>
+    <ChapterNum>22</ChapterNum>
+</book>
+</bible>
