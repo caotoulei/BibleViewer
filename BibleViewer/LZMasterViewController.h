@@ -14,4 +14,8 @@
 
 @property (strong, nonatomic) LZDetailViewController *detailViewController;
 
+- (void)loadDetail:  (UIButton *)sender;
+//- (void)loadDetail:  (id)sender : (NSString *)bookAndCh;
+
+
 @end
