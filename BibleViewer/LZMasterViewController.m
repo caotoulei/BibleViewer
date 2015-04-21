@@ -1,4 +1,3 @@
-
 //  LZMasterViewController.m
 //  BibleViewer
 //
@@ -43,7 +42,6 @@
     
     mybooleans = [[NSMutableArray alloc] init];
     for (int i=0; i<[bookArray count]; i=i+1) {
-        //[mybooleans addObject: NO];
         [mybooleans addObject:[NSNumber numberWithBool:NO]];
     }
 }
@@ -51,7 +49,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)insertNewObject:(id)sender
@@ -74,15 +71,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(mybooleans[section]==[NSNumber numberWithBool:YES]) {
-        ///we want the number of people plus the header cell
-        //return 4;
-        //Book *b =(Book *)(bookArray[section]);
-        //int i = [((Book *)(bookArray[section])).numberOfChapters intValue];
-        //this is old version for using cells
-        //return [((Book *)(bookArray[section])).numberOfChapters intValue]+1;
         return 2;
     } else {
-        ///we just want the header cell
         return 1;
     }
     
@@ -97,21 +87,20 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault
+                                       reuseIdentifier:  @"Cell"];
+    cell.textLabel.text = @"";
     if(indexPath.row==0){
-        cell.textLabel.text = @"";
+       
     }
     
     if(indexPath.row==1){
-        cell.textLabel.text = @"";
         if(mybooleans[indexPath.section]==[NSNumber numberWithBool:NO]) {
-            
             
         }
         if(mybooleans[indexPath.section]==[NSNumber numberWithBool:YES]) {
-            
-            
-            //dynamiclly add chapter button to each book section
+        //dynamiclly add chapter button to each book section
             int chNum = [((Book *)bookArray[indexPath.section]).numberOfChapters intValue];
             for (int i=0; i<chNum; i=i+1) {
                 int x =(i%10);
@@ -122,9 +111,11 @@
                 [button1 setTag:indexPath.section]; //set section(book) on button's tag
                 [cell addSubview:button1];
                 [button1 addTarget:self action:@selector(loadDetail:)  forControlEvents:UIControlEventTouchUpInside];
+             
             }
-            
+                
         }
+        
     }
     //else{cell.textLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];}
     return cell;
@@ -144,9 +135,6 @@
 
 - (void)loadDetail: (UIButton *)sender
 {
-    //NSLog(@"Gooooing to content detail");
-    //NSLog([NSString stringWithFormat:@"%i", [sender tag]]);
-    //NSLog([(UIButton *)sender currentTitle]);
     self.detailViewController.detailItem = [NSString stringWithFormat:@"%i,%@",
                                             [sender tag],
                                             [(UIButton *)sender currentTitle] ];
@@ -156,7 +144,6 @@
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
     return NO;
 }
 
@@ -166,34 +153,16 @@
         [_objects removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
 }
 
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
 
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == 0) {
-        ///it's the first row of any section so it would be your custom section header
-        
-        ///put in your code to toggle your boolean value here
-        //mybooleans[indexPath.section] = !mybooleans[indexPath.section];
+       
         if(mybooleans[indexPath.section]==[NSNumber numberWithBool:YES]){
             NSNumber *newValue = [NSNumber numberWithBool:NO];
             [mybooleans replaceObjectAtIndex:indexPath.section withObject:newValue];
@@ -210,10 +179,6 @@
         
     }
     
-    
-    //    NSString *ch = [NSString stringWithFormat:@"%i,%i",[indexPath section], indexPath.row];
-    //    if(indexPath.row!=0)
-    //        self.detailViewController.detailItem = ch;
     
 }
 
