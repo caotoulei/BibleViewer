@@ -9,8 +9,12 @@
 #import "LZDetailViewController.h"
 #import "BibleXMLParser.h"
 #import "LZNoteViewController.h"
+#import "Parser.h"
 
 @interface LZDetailViewController ()
+{
+    NSMutableArray *bookArray;
+}
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 @end
@@ -34,6 +38,11 @@
         [self.contentWebView loadHTMLString:[parser->content description] baseURL:nil];
         
         [self configureView];
+        
+        Parser *indexparser = [[Parser alloc] init];
+        bookArray = indexparser->bookArray;
+        self.title =[NSString stringWithFormat:@"%@%i", [((Book *)bookArray[bookNumber-1]).name stringByReplacingOccurrencesOfString: @"\n" withString:@""],  chapterNumber];
+        
     }
 
     if (self.masterPopoverController != nil) {
