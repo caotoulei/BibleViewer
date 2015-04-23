@@ -48,13 +48,24 @@
                   inManagedObjectContext:context];
     [newNote setValue: [NSDate date] forKey:@"addedOn"];
     [newNote setValue: @"Lei Zhang" forKey:@"addedBy"];
+    
+    NSNumber *bookNumber = [NSNumber numberWithInt:_numBook];
+    NSNumber *chNumber = [NSNumber numberWithInt:_numCh];
+
     NSNumber *myNumber = [NSNumber numberWithInt:1];
-    [newNote setValue: myNumber forKey:@"bookNumber"];
-    [newNote setValue: myNumber forKey:@"chapterNumber"];
-    [newNote setValue: @"test project" forKey:@"content"];
+    [newNote setValue: bookNumber forKey:@"bookNumber"];
+    [newNote setValue: chNumber forKey:@"chapterNumber"];
+    [newNote setValue: _noteContentTextView.text forKey:@"content"];
 
     NSError *error;
     [context save:&error];
+    
+//    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+//    [request setEntity:[NSEntityDescription entityForName:@"BibleNote" inManagedObjectContext:context]];
+//    
+//    NSError *error = nil;
+//    NSArray *results = [context executeFetchRequest:request error:&error];
+//    [results objectAtIndex:0];
 }
 
 -(IBAction)loadNote:(id)sender{
@@ -68,15 +79,16 @@
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     [request setEntity:entityDesc];
     
-    NSPredicate *pred =
-    [NSPredicate predicateWithFormat:@"(addedBy = %@)",
-     @"Lei Zhang" ];
+    NSNumber *bookNumber = [NSNumber numberWithInt:_numBook];
+    NSNumber *chNumber = [NSNumber numberWithInt:_numCh];
+    
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"(bookNumber = %@) AND (chapterNumber = %@)", bookNumber, chNumber ];
+    
     [request setPredicate:pred];
     NSManagedObject *matches = nil;
     
     NSError *error;
-    NSArray *objects = [context executeFetchRequest:request
-                                              error:&error];
+    NSArray *objects = [context executeFetchRequest:request error:&error];
     
     if ([objects count] == 0) {
         _noteContentTextView.text = @"No matches";
