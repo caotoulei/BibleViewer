@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>3D4830B0-B12C-493B-9A3B-99ECEDD2311F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>BibleViewer</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>60E736EC0ADFFA56B33F0AD2BE0404C4111AFC26</key>
@@ -16,11 +16,11 @@
 		<string>https://github.com/caotoulei/BibleViewer.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>BibleViewer.xcodeproj/project.xcworkspace</string>
+	<string>BibleViewer.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>60E736EC0ADFFA56B33F0AD2BE0404C4111AFC26</key>
-		<string>../..BibleViewer/</string>
+		<string>../..BibleViewer</string>
 		<key>7E38167A28B94E8688199C6E10754F4BCBA6D398</key>
 		<string>../..</string>
 	</dict>
@@ -46,7 +46,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>60E736EC0ADFFA56B33F0AD2BE0404C4111AFC26</string>
 			<key>IDESourceControlWCCName</key>
-			<string>BibleViewer</string>
+			<string>BibleViewerBibleViewer</string>
 		</dict>
 	</array>
 </dict>

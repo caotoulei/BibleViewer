@@ -20,7 +20,8 @@
 @property  NSInteger *numBook;
 
 - (IBAction)saveNote:(id)sender;
+- (IBAction)loadNote:(id)sender;
 
--(IBAction)loadNote:(id)sender;
+- (IBAction)updateNote:(id)sender;
 
 @end

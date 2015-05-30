@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 
 @interface LZNoteViewController ()
-
+//new..
 @end
 
 @implementation LZNoteViewController
@@ -98,6 +98,27 @@
     }
 }
 
-
+-(IBAction)updateNote:(id)sender{
+    LZAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    NSManagedObject *newNote;
+    newNote = [NSEntityDescription
+               insertNewObjectForEntityForName: @"BibleNote"
+               inManagedObjectContext:context];
+    [newNote setValue: [NSDate date] forKey:@"addedOn"];
+    [newNote setValue: @"Lei Zhang" forKey:@"addedBy"];
+    
+    NSNumber *bookNumber = [NSNumber numberWithInt:_numBook];
+    NSNumber *chNumber = [NSNumber numberWithInt:_numCh];
+    
+    NSNumber *myNumber = [NSNumber numberWithInt:1];
+    [newNote setValue: bookNumber forKey:@"bookNumber"];
+    [newNote setValue: chNumber forKey:@"chapterNumber"];
+    [newNote setValue: _noteContentTextView.text forKey:@"content"];
+    
+    NSError *error;
+    [context save:&error];
+}
 
 @end

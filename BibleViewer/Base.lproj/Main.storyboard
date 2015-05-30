@@ -104,12 +104,21 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ote-g8-jBy">
-                                <rect key="frame" x="246" y="322" width="83" height="30"/>
+                                <rect key="frame" x="181" y="322" width="83" height="30"/>
                                 <state key="normal" title="Load Note">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="loadNote:" destination="M9x-kz-vgJ" eventType="touchUpInside" id="PcR-zM-CRg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9N-2E-FrD">
+                                <rect key="frame" x="288" y="322" width="93" height="30"/>
+                                <state key="normal" title="Update Note">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateNote:" destination="M9x-kz-vgJ" eventType="touchUpInside" id="UM0-bj-y9L"/>
                                 </connections>
                             </button>
                         </subviews>
